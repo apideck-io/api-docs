@@ -1,8 +1,159 @@
 /* place your custom CSS overrides here */
 
+.content {
+    -webkit-transform: translateZ(0);
+    position: relative;
+    z-index: 30;
+    border-top: 4px solid #b4abdb;
+}
+
 div .highlight {
 	max-width: 95%;
 	max-height: 350px;
 	overflow-y: auto;
 	overflow-x: hidden;
+}
+
+.lang-selector a {
+  padding: 16px 28px;
+  line-height: 30px;
+}
+
+.content code {
+  background: #edeef5;
+  padding: 13px 20px 14px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 1.4em;
+}
+
+.content pre code {
+  font-size: 13px;
+}
+
+.page-wrapper {
+  background-color: #FFF;
+}
+
+.content aside {
+  background: #ecf7ff;
+  margin-left: 32px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  text-shadow: none;
+  border: none;
+  border-radius: 6px;
+  border: none;
+  margin-right: 52%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.content aside.warning {
+  background-color: #f9e6f2;
+}
+
+.content aside.success {
+    background-color: #bdf1c3;
+}
+
+.toc-wrapper {
+  background: #1C304D;
+  padding: 20px 0;
+/*  width: 280px;*/
+}
+
+.toc-wrapper > img {
+  display: block;
+  max-width: 100%;
+  padding: 0 0 10px 30px;
+}
+
+.toc-wrapper .toc-list-h2 {
+  background: #2E4A71;
+}
+
+.toc-wrapper .toc-h2 {
+  padding-left: 40px;
+  font-size: 13px;
+}
+
+.toc-wrapper .toc-list-h1 {
+  margin-top: 15px;
+}
+
+.toc-wrapper li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.toc-wrapper li a {
+  color: #FFF;
+  letter-spacing: normal;
+  -webkit-font-smoothing: auto;
+  font-weight: 300;
+  padding-left: 30px;
+}
+
+.toc-wrapper .toc-link.active {
+  background-color: #479CFF;
+  color: #fff;
+}
+
+.toc-wrapper .toc-link.active-parent {
+  background-color: #233e63;
+  color: #ffffff;
+}
+
+.toc-wrapper > .search input {
+  border-color: #f6f7fc;
+  background-color: #f6f7fc;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 13px 0 12px 35px;
+  color: #464a5c;
+  margin: 0 30px 0 15px;
+  border-radius: 2px;
+}
+
+.toc-wrapper > .search {
+  margin: 10px 0 0 0;
+}
+
+.toc-wrapper>.search:before {
+  color: #9ba4b3;
+  left: 30px;
+  top: 15px;
+}
+
+.toc-wrapper .search-results li a {
+  color: #9ba4b3;
+}
+
+.toc-wrapper .search-results {
+  background-color: #f6f7fc;
+}
+
+.toc-wrapper .search-results.visible {
+  height: 50%;
+}
+
+/* Tables */
+
+.content table {
+  box-sizing: border-box;
+  display: block;
+  text-shadow: none;
+}
+
+.content table tr:nth-child(odd)>td {
+    background-color: white;
+}
+
+.content table tr:nth-child(even)>td {
+    background-color: #f6f7fc;
 }
