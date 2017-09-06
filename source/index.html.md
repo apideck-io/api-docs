@@ -1,5 +1,5 @@
 ---
-title: CRM API v0.1.0
+title: CRM API
 language_tabs:
   - shell: Shell
   - http: HTTP
@@ -14,7 +14,7 @@ search: true
 highlight_theme: darkula
 ---
 
-# CRM API v0.1.0
+# CRM API
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
@@ -212,7 +212,10 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
     "all_day": false,
     "reminder_date": "2017-08-10T16:00:00.001Z",
     "linked_resources": [
-      {}
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
     ],
     "creator_id": 456,
     "updated_at": "2017-08-12T20:43:21.291Z",
@@ -249,7 +252,7 @@ anonymous|[[Activity](#schemaactivity)]|false|No description
 » creator_id|integer|false|No description
 » updated_at|string|false|No description
 » created_at|string|false|No description
-» linked_resources|[Unknown]|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|integer|false|No description
 »» type|string|false|No description
 
@@ -311,7 +314,10 @@ const inputBody = '{
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -397,7 +403,10 @@ System.out.println(response.toString());
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -422,7 +431,7 @@ body|body|[Activity](#schemaactivity)|true|Activity object that needs to be adde
 » creator_id|body|integer|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -578,7 +587,10 @@ id|path|integer|true|ID of the resource to return
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -649,7 +661,10 @@ const inputBody = '{
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -738,7 +753,10 @@ System.out.println(response.toString());
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -764,7 +782,7 @@ body|body|[Activity](#schemaactivity)|true|Fields that need to be updated on the
 » creator_id|body|integer|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -794,7 +812,10 @@ body|body|[Activity](#schemaactivity)|true|Fields that need to be updated on the
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -1055,7 +1076,10 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
     "direction": "incoming",
     "missed": false,
     "linked_resources": [
-      {}
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
     ],
     "creator_id": "456",
     "updated_at": "2017-08-12T20:43:21.291Z",
@@ -1093,8 +1117,8 @@ anonymous|[[Call](#schemacall)]|false|No description
 » creator_id|string|false|No description
 » updated_at|string|false|No description
 » created_at|string|false|No description
-» linked_resources|[Unknown]|false|No description
-»» id|string|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|integer|false|No description
 »» type|string|false|No description
 
 
@@ -1155,7 +1179,10 @@ const inputBody = '{
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -1241,7 +1268,10 @@ System.out.println(response.toString());
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -1267,8 +1297,8 @@ body|body|[Call](#schemacall)|true|Call object that needs to be added
 » creator_id|body|string|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
-»» id|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
 »» type|body|string|false|No description
 
 
@@ -1422,7 +1452,10 @@ id|path|integer|true|ID of the resource to return
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -1493,7 +1526,10 @@ const inputBody = '{
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -1582,7 +1618,10 @@ System.out.println(response.toString());
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -1609,8 +1648,8 @@ body|body|[Call](#schemacall)|true|Fields that need to be updated on the resourc
 » creator_id|body|string|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
-»» id|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
 »» type|body|string|false|No description
 
 
@@ -1638,7 +1677,10 @@ body|body|[Call](#schemacall)|true|Fields that need to be updated on the resourc
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -7097,6 +7139,12 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
     "custom_fields": {
       "research": "High energy person. Founding CEO Salesforce."
     },
+    "linked_resources": [
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
+    ],
     "updated_at": "2017-08-12T20:43:21.291Z",
     "created_at": "2017-08-12T20:43:21.291Z"
   }
@@ -7130,6 +7178,9 @@ anonymous|[[Task](#schematask)]|false|No description
 » custom_fields|object|false|No description
 » updated_at|string|false|No description
 » created_at|string|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|integer|false|No description
+»» type|string|false|No description
 
 
 
@@ -7192,7 +7243,13 @@ const inputBody = '{
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }';
 const headers = {
   'Content-Type':'application/json'
@@ -7280,7 +7337,13 @@ System.out.println(response.toString());
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Parameters
@@ -7303,7 +7366,16 @@ body|body|[Task](#schematask)|true|Task object that needs to be added
 » custom_fields|body|object|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
+»» type|body|string|false|No description
 
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+»» type|Lead/Opportunity/Person/Company|
 
 ### Responses
 
@@ -7451,7 +7523,13 @@ id|path|integer|true|ID of the resource to return
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Responses
@@ -7524,7 +7602,13 @@ const inputBody = '{
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }';
 const headers = {
   'Content-Type':'application/json',
@@ -7615,7 +7699,13 @@ System.out.println(response.toString());
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Parameters
@@ -7639,7 +7729,16 @@ body|body|[Task](#schematask)|true|Fields that need to be updated on the resourc
 » custom_fields|body|object|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
+»» type|body|string|false|No description
 
+
+#### Enumerated Values
+
+|Parameter|Value|
+|---|---|
+»» type|Lead/Opportunity/Person/Company|
 
 > Example responses
 
@@ -7661,7 +7760,13 @@ body|body|[Task](#schematask)|true|Fields that need to be updated on the resourc
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Responses
@@ -8730,11 +8835,14 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
 [
   {
     "id": 134,
-    "linked_resources": [
-      {}
-    ],
     "title": "Note to myself",
     "description": "New entrant in market. Look into to this company + references.",
+    "linked_resources": [
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
+    ],
     "creator_id": "456",
     "updated": "2017-08-12T20:43:21.291Z",
     "created": "2017-08-12T20:43:21.291Z"
@@ -8760,7 +8868,7 @@ anonymous|[[Note](#schemanote)]|false|No description
 » creator_id|string|false|No description
 » updated|string|false|No description
 » created|string|false|No description
-» linked_resources|[Unknown]|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|integer|false|No description
 »» type|string|false|No description
 
@@ -8809,11 +8917,14 @@ $.ajax({
 ```javascript--nodejs
 const request = require('node-fetch');
 const inputBody = '{
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }';
 const headers = {
   'Content-Type':'application/json'
@@ -8885,11 +8996,14 @@ System.out.println(response.toString());
 
 ```json
 {
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Parameters
@@ -8903,7 +9017,7 @@ body|body|[Note](#schemanote)|true|Note object that needs to be added
 » creator_id|body|string|false|No description
 » updated|body|string|false|No description
 » created|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -9044,11 +9158,14 @@ id|path|integer|true|ID of the resource to return
 
 ```json
 {
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Responses
@@ -9105,11 +9222,14 @@ $.ajax({
 ```javascript--nodejs
 const request = require('node-fetch');
 const inputBody = '{
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }';
 const headers = {
   'Content-Type':'application/json',
@@ -9184,11 +9304,14 @@ System.out.println(response.toString());
 
 ```json
 {
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Parameters
@@ -9203,7 +9326,7 @@ body|body|[Note](#schemanote)|true|Fields that need to be updated on the resourc
 » creator_id|body|string|false|No description
 » updated|body|string|false|No description
 » created|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -9218,11 +9341,14 @@ body|body|[Note](#schemanote)|true|Fields that need to be updated on the resourc
 
 ```json
 {
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }
 ```
 ### Responses
@@ -9484,9 +9610,38 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
     "open_count": 10,
     "reply_count": 2,
     "has_attachments": true,
-    "addresses": [
-      {}
-    ],
+    "addresses": {
+      "from": {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      },
+      "to": [
+        {
+          "name": "Elon Musk",
+          "email": "elon@spacex.com",
+          "contact_id": "4559",
+          "user_id": ""
+        }
+      ],
+      "cc": [
+        {
+          "name": "Elon Musk",
+          "email": "elon@spacex.com",
+          "contact_id": "4559",
+          "user_id": ""
+        }
+      ],
+      "bcc": [
+        {
+          "name": "Elon Musk",
+          "email": "elon@spacex.com",
+          "contact_id": "4559",
+          "user_id": ""
+        }
+      ]
+    },
     "body": [
       {
         "type": "text/plain",
@@ -9507,7 +9662,10 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
       }
     ],
     "linked_resources": [
-      {}
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
     ],
     "owner_id": "456",
     "creator_id": "456",
@@ -9546,11 +9704,7 @@ anonymous|[[Email](#schemaemail)]|false|No description
 » open_count|integer|false|No description
 » reply_count|integer|false|No description
 » has_attachments|boolean|false|No description
-» owner_id|string|false|No description
-» creator_id|string|false|No description
-» updated|string|false|No description
-» created|string|false|No description
-» addresses|[Unknown]|false|No description
+» addresses|object|false|No description
 »» from|[EmailAddress](#schemaemailaddress)|false|No description
 »»» name|string|false|No description
 »»» email|string|false|No description
@@ -9571,6 +9725,10 @@ anonymous|[[Email](#schemaemail)]|false|No description
 »»» email|string|false|No description
 »»» contact_id|string|false|No description
 »»» user_id|string|false|No description
+» owner_id|string|false|No description
+» creator_id|string|false|No description
+» updated|string|false|No description
+» created|string|false|No description
 » body|[[EmailBody](#schemaemailbody)]|false|No description
 »» type|string|false|No description
 »» charset|string|false|No description
@@ -9579,8 +9737,8 @@ anonymous|[[Email](#schemaemail)]|false|No description
 »» id|string|false|No description
 »» name|string|false|No description
 »» url|string|false|No description
-» linked_resources|[Unknown]|false|No description
-»» id|string|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|integer|false|No description
 »» type|string|false|No description
 
 
@@ -9644,9 +9802,38 @@ const inputBody = '{
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -9667,7 +9854,10 @@ const inputBody = '{
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -9756,9 +9946,38 @@ System.out.println(response.toString());
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -9779,7 +9998,10 @@ System.out.println(response.toString());
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -9805,11 +10027,7 @@ body|body|[Email](#schemaemail)|true|Email object that needs to be added
 » open_count|body|integer|false|No description
 » reply_count|body|integer|false|No description
 » has_attachments|body|boolean|false|No description
-» owner_id|body|string|false|No description
-» creator_id|body|string|false|No description
-» updated|body|string|false|No description
-» created|body|string|false|No description
-» addresses|body|[Unknown]|false|No description
+» addresses|body|object|false|No description
 »» from|body|[EmailAddress](#schemaemailaddress)|false|No description
 »»» name|body|string|false|No description
 »»» email|body|string|false|No description
@@ -9830,6 +10048,10 @@ body|body|[Email](#schemaemail)|true|Email object that needs to be added
 »»» email|body|string|false|No description
 »»» contact_id|body|string|false|No description
 »»» user_id|body|string|false|No description
+» owner_id|body|string|false|No description
+» creator_id|body|string|false|No description
+» updated|body|string|false|No description
+» created|body|string|false|No description
 » body|body|[[EmailBody](#schemaemailbody)]|false|No description
 »» type|body|string|false|No description
 »» charset|body|string|false|No description
@@ -9838,8 +10060,8 @@ body|body|[Email](#schemaemail)|true|Email object that needs to be added
 »» id|body|string|false|No description
 »» name|body|string|false|No description
 »» url|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
-»» id|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
 »» type|body|string|false|No description
 
 
@@ -10002,9 +10224,38 @@ id|path|integer|true|ID of the resource to return
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -10025,7 +10276,10 @@ id|path|integer|true|ID of the resource to return
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -10099,9 +10353,38 @@ const inputBody = '{
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -10122,7 +10405,10 @@ const inputBody = '{
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -10214,9 +10500,38 @@ System.out.println(response.toString());
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -10237,7 +10552,10 @@ System.out.println(response.toString());
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -10264,11 +10582,7 @@ body|body|[Email](#schemaemail)|true|Fields that need to be updated on the resou
 » open_count|body|integer|false|No description
 » reply_count|body|integer|false|No description
 » has_attachments|body|boolean|false|No description
-» owner_id|body|string|false|No description
-» creator_id|body|string|false|No description
-» updated|body|string|false|No description
-» created|body|string|false|No description
-» addresses|body|[Unknown]|false|No description
+» addresses|body|object|false|No description
 »» from|body|[EmailAddress](#schemaemailaddress)|false|No description
 »»» name|body|string|false|No description
 »»» email|body|string|false|No description
@@ -10289,6 +10603,10 @@ body|body|[Email](#schemaemail)|true|Fields that need to be updated on the resou
 »»» email|body|string|false|No description
 »»» contact_id|body|string|false|No description
 »»» user_id|body|string|false|No description
+» owner_id|body|string|false|No description
+» creator_id|body|string|false|No description
+» updated|body|string|false|No description
+» created|body|string|false|No description
 » body|body|[[EmailBody](#schemaemailbody)]|false|No description
 »» type|body|string|false|No description
 »» charset|body|string|false|No description
@@ -10297,8 +10615,8 @@ body|body|[Email](#schemaemail)|true|Fields that need to be updated on the resou
 »» id|body|string|false|No description
 »» name|body|string|false|No description
 »» url|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
-»» id|body|string|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
+»» id|body|integer|false|No description
 »» type|body|string|false|No description
 
 
@@ -10335,9 +10653,38 @@ body|body|[Email](#schemaemail)|true|Fields that need to be updated on the resou
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -10358,7 +10705,10 @@ body|body|[Email](#schemaemail)|true|Fields that need to be updated on the resou
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -10611,7 +10961,10 @@ per_page|query|integer|false|Number of records to return per page. Default = 100
     "url": "https://api.apideck.com/crm/files/13/download",
     "description": "Signed contract of new deal!",
     "linked_resources": [
-      {}
+      {
+        "id": 2,
+        "type": "Opportunity"
+      }
     ],
     "owner_id": "456",
     "creator_id": "456",
@@ -10643,7 +10996,7 @@ anonymous|[[File](#schemafile)]|false|No description
 » creator_id|string|false|No description
 » updated_at|string|false|No description
 » created_at|string|false|No description
-» linked_resources|[Unknown]|false|No description
+» linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|integer|false|No description
 »» type|string|false|No description
 
@@ -10698,7 +11051,10 @@ const inputBody = '{
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -10777,7 +11133,10 @@ System.out.println(response.toString());
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -10796,7 +11155,7 @@ body|body|[File](#schemafile)|true|Files object that needs to be added
 » creator_id|body|string|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -10943,7 +11302,10 @@ id|path|integer|true|ID of the resource to return
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -11007,7 +11369,10 @@ const inputBody = '{
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }';
 const headers = {
@@ -11089,7 +11454,10 @@ System.out.println(response.toString());
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -11109,7 +11477,7 @@ body|body|[File](#schemafile)|true|Fields that need to be updated on the resourc
 » creator_id|body|string|false|No description
 » updated_at|body|string|false|No description
 » created_at|body|string|false|No description
-» linked_resources|body|[Unknown]|false|No description
+» linked_resources|body|[[LinkedResource](#schemalinkedresource)]|false|No description
 »» id|body|integer|false|No description
 »» type|body|string|false|No description
 
@@ -11130,7 +11498,10 @@ body|body|[File](#schemafile)|true|Fields that need to be updated on the resourc
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }
 ```
@@ -12965,7 +13336,13 @@ social_links|[[SocialLink](#schemasociallink)]|false|No description
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 } 
 ```
 
@@ -12988,7 +13365,16 @@ status|string|false|No description
 custom_fields|object|false|No description
 updated_at|string|false|No description
 created_at|string|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+» id|integer|false|No description
+» type|string|false|No description
 
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+» type|Lead/Opportunity/Person/Company|
 
 
 ## Call
@@ -13010,7 +13396,10 @@ created_at|string|false|No description
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 } 
 ```
@@ -13036,8 +13425,8 @@ missed|boolean|false|No description
 creator_id|string|false|No description
 updated_at|string|false|No description
 created_at|string|false|No description
-linked_resources|[Unknown]|false|No description
-» id|string|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+» id|integer|false|No description
 » type|string|false|No description
 
 
@@ -13068,7 +13457,10 @@ direction|incoming/outgoing|
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 } 
 ```
@@ -13093,7 +13485,7 @@ reminder_date|string|false|No description
 creator_id|integer|false|No description
 updated_at|string|false|No description
 created_at|string|false|No description
-linked_resources|[Unknown]|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 » id|integer|false|No description
 » type|string|false|No description
 
@@ -13129,9 +13521,38 @@ visibility|Busy/OutOfOffice/Free|
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -13152,7 +13573,10 @@ visibility|Busy/OutOfOffice/Free|
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 } 
 ```
@@ -13178,11 +13602,7 @@ send_attempts|integer|false|No description
 open_count|integer|false|No description
 reply_count|integer|false|No description
 has_attachments|boolean|false|No description
-owner_id|string|false|No description
-creator_id|string|false|No description
-updated|string|false|No description
-created|string|false|No description
-addresses|[Unknown]|false|No description
+addresses|object|false|No description
 » from|[EmailAddress](#schemaemailaddress)|false|No description
 »» name|string|false|No description
 »» email|string|false|No description
@@ -13203,6 +13623,10 @@ addresses|[Unknown]|false|No description
 »» email|string|false|No description
 »» contact_id|string|false|No description
 »» user_id|string|false|No description
+owner_id|string|false|No description
+creator_id|string|false|No description
+updated|string|false|No description
+created|string|false|No description
 body|[[EmailBody](#schemaemailbody)]|false|No description
 » type|string|false|No description
 » charset|string|false|No description
@@ -13211,8 +13635,8 @@ attachments|[[EmailAttachment](#schemaemailattachment)]|false|No description
 » id|string|false|No description
 » name|string|false|No description
 » url|string|false|No description
-linked_resources|[Unknown]|false|No description
-» id|string|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
+» id|integer|false|No description
 » type|string|false|No description
 
 
@@ -13352,11 +13776,14 @@ prices|[[ProductPrice](#schemaproductprice)]|false|No description
 
 ```json
 {
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 } 
 ```
 
@@ -13370,7 +13797,7 @@ description|string|false|No description
 creator_id|string|false|No description
 updated|string|false|No description
 created|string|false|No description
-linked_resources|[Unknown]|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 » id|integer|false|No description
 » type|string|false|No description
 
@@ -13394,7 +13821,10 @@ linked_resources|[Unknown]|false|No description
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 } 
 ```
@@ -13413,7 +13843,7 @@ owner_id|string|false|No description
 creator_id|string|false|No description
 updated_at|string|false|No description
 created_at|string|false|No description
-linked_resources|[Unknown]|false|No description
+linked_resources|[[LinkedResource](#schemalinkedresource)]|false|No description
 » id|integer|false|No description
 » type|string|false|No description
 
@@ -13423,6 +13853,32 @@ linked_resources|[Unknown]|false|No description
 |Property|Value|
 |---|---|
 » type|Lead/Opportunity/Person/Company|
+
+
+## LinkedResource
+
+<a name="schemalinkedresource"></a>
+
+```json
+{
+  "id": 2,
+  "type": "Opportunity"
+} 
+```
+
+### Properties
+
+Name|Type|Required|Description
+---|---|---|---|
+id|integer|false|No description
+type|string|false|No description
+
+
+#### Enumerated Values
+
+|Property|Value|
+|---|---|
+type|Lead/Opportunity/Person/Company|
 
 
 ## Campaign

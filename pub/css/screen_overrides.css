@@ -7,13 +7,6 @@
     border-top: 4px solid #b4abdb;
 }
 
-div .highlight {
-	max-width: 95%;
-	max-height: 350px;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
 .lang-selector a {
   padding: 16px 28px;
   line-height: 30px;

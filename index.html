@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>CRM API v0.1.0</title>
+    <title>CRM API</title>
 
 
 
@@ -98,7 +98,7 @@ window.onpopstate = function() {
 	  	<ul class="toc-list-h1">
         
           <li>
-            <a href="#crm-api-v0-1-0" class="toc-h1 toc-link" data-title="CRM API v0.1.0">CRM API v0.1.0</a>
+            <a href="#crm-api" class="toc-h1 toc-link" data-title="CRM API">CRM API</a>
             
           </li>
         
@@ -575,6 +575,10 @@ window.onpopstate = function() {
                   </li>
                 
                   <li>
+                    <a href="#linkedresource" class="toc-h2 toc-link" data-title="Schemas">LinkedResource</a>
+                  </li>
+                
+                  <li>
                     <a href="#campaign" class="toc-h2 toc-link" data-title="Schemas">Campaign</a>
                   </li>
                 
@@ -633,7 +637,7 @@ window.onpopstate = function() {
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="crm-api-v0-1-0">CRM API v0.1.0</h1>
+        <h1 id="crm-api">CRM API</h1>
 <blockquote>
 <p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
 </blockquote>
@@ -919,7 +923,10 @@ System.out.println(response.toString());
     <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
     <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
     <span class="hljs-attr">"linked_resources"</span>: [
-      {}
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
     ],
     <span class="hljs-attr">"creator_id"</span>: <span class="hljs-number">456</span>,
     <span class="hljs-attr">"updated_at"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>,
@@ -1062,7 +1069,7 @@ System.out.println(response.toString());
 </tr>
 <tr>
 <td>» linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -1128,7 +1135,10 @@ $.ajax({
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -1205,7 +1215,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -1343,7 +1356,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -1543,7 +1556,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -1629,7 +1645,10 @@ $.ajax({
   "all_day": false,
   "reminder_date": "2017-08-10T16:00:00.001Z",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -1709,7 +1728,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -1854,7 +1876,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -1914,7 +1936,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -2224,7 +2249,10 @@ System.out.println(response.toString());
     <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
     <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
     <span class="hljs-attr">"linked_resources"</span>: [
-      {}
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
     ],
     <span class="hljs-attr">"creator_id"</span>: <span class="hljs-string">"456"</span>,
     <span class="hljs-attr">"updated_at"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>,
@@ -2373,13 +2401,13 @@ System.out.println(response.toString());
 </tr>
 <tr>
 <td>» linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -2439,7 +2467,10 @@ $.ajax({
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -2516,7 +2547,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
   <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -2661,14 +2695,14 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
 <td>body</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -2857,7 +2891,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
   <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -2943,7 +2980,10 @@ $.ajax({
   "direction": "incoming",
   "missed": false,
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -3023,7 +3063,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
   <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -3175,14 +3218,14 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
 <td>body</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -3231,7 +3274,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
   <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -12158,6 +12204,12 @@ System.out.println(response.toString());
     <span class="hljs-attr">"custom_fields"</span>: {
       <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
     },
+    <span class="hljs-attr">"linked_resources"</span>: [
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
+    ],
     <span class="hljs-attr">"updated_at"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>,
     <span class="hljs-attr">"created_at"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>
   }
@@ -12290,6 +12342,24 @@ System.out.println(response.toString());
 <td>false</td>
 <td>No description</td>
 </tr>
+<tr>
+<td>» linked_resources</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>integer</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» type</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
 </tbody>
 </table>
 <aside class="warning">
@@ -12343,7 +12413,13 @@ $.ajax({
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>
@@ -12422,7 +12498,13 @@ System.out.println(response.toString());
   ],
   <span class="hljs-attr">"custom_fields"</span>: {
     <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
-  }
+  },
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -12548,6 +12630,42 @@ System.out.println(response.toString());
 <td>string</td>
 <td>false</td>
 <td>No description</td>
+</tr>
+<tr>
+<td>» linked_resources</td>
+<td>body</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>body</td>
+<td>integer</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» type</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enumerated-values">Enumerated Values</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>»» type</td>
+<td>Lead/Opportunity/Person/Company</td>
 </tr>
 </tbody>
 </table>
@@ -12711,7 +12829,13 @@ System.out.println(response.toString());
   ],
   <span class="hljs-attr">"custom_fields"</span>: {
     <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
-  }
+  },
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="responses">Responses</h3>
@@ -12799,7 +12923,13 @@ $.ajax({
   ],
   "custom_fields": {
     "research": "High energy person. Founding CEO Salesforce."
-  }
+  },
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
@@ -12881,7 +13011,13 @@ System.out.println(response.toString());
   ],
   <span class="hljs-attr">"custom_fields"</span>: {
     <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
-  }
+  },
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -13015,6 +13151,42 @@ System.out.println(response.toString());
 <td>false</td>
 <td>No description</td>
 </tr>
+<tr>
+<td>» linked_resources</td>
+<td>body</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» id</td>
+<td>body</td>
+<td>integer</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>»» type</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enumerated-values">Enumerated Values</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>»» type</td>
+<td>Lead/Opportunity/Person/Company</td>
+</tr>
 </tbody>
 </table>
 <blockquote>
@@ -13037,7 +13209,13 @@ System.out.println(response.toString());
   ],
   <span class="hljs-attr">"custom_fields"</span>: {
     <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
-  }
+  },
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="responses">Responses</h3>
@@ -14536,11 +14714,14 @@ System.out.println(response.toString());
 <pre class="highlight tab tab-json"><code>[
   {
     <span class="hljs-attr">"id"</span>: <span class="hljs-number">134</span>,
-    <span class="hljs-attr">"linked_resources"</span>: [
-      {}
-    ],
     <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
     <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+    <span class="hljs-attr">"linked_resources"</span>: [
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
+    ],
     <span class="hljs-attr">"creator_id"</span>: <span class="hljs-string">"456"</span>,
     <span class="hljs-attr">"updated"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>,
     <span class="hljs-attr">"created"</span>: <span class="hljs-string">"2017-08-12T20:43:21.291Z"</span>
@@ -14622,7 +14803,7 @@ System.out.println(response.toString());
 </tr>
 <tr>
 <td>» linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -14675,11 +14856,14 @@ $.ajax({
 </code></pre>
 <pre class="highlight tab tab-javascript--nodejs"><code><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-fetch'</span>);
 <span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">'{
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>
@@ -14742,11 +14926,14 @@ System.out.println(response.toString());
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"linked_resources"</span>: [
-    {}
-  ],
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -14813,7 +15000,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -14992,11 +15179,14 @@ System.out.println(response.toString());
 <p>Example responses</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"linked_resources"</span>: [
-    {}
-  ],
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="responses">Responses</h3>
@@ -15068,11 +15258,14 @@ $.ajax({
 </code></pre>
 <pre class="highlight tab tab-javascript--nodejs"><code><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-fetch'</span>);
 <span class="hljs-keyword">const</span> inputBody = <span class="hljs-string">'{
-  "linked_resources": [
-    {}
-  ],
   "title": "Note to myself",
-  "description": "New entrant in market. Look into to this company + references."
+  "description": "New entrant in market. Look into to this company + references.",
+  "linked_resources": [
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
+  ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
   <span class="hljs-string">'Content-Type'</span>:<span class="hljs-string">'application/json'</span>,
@@ -15138,11 +15331,14 @@ System.out.println(response.toString());
 <p>Body parameter</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"linked_resources"</span>: [
-    {}
-  ],
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="parameters">Parameters</h3>
@@ -15216,7 +15412,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -15255,11 +15451,14 @@ System.out.println(response.toString());
 <p>Example responses</p>
 </blockquote>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"linked_resources"</span>: [
-    {}
-  ],
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 }
 </code></pre>
 <h3 id="responses">Responses</h3>
@@ -15570,9 +15769,38 @@ System.out.println(response.toString());
     <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
     <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
     <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-    <span class="hljs-attr">"addresses"</span>: [
-      {}
-    ],
+    <span class="hljs-attr">"addresses"</span>: {
+      <span class="hljs-attr">"from"</span>: {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      },
+      <span class="hljs-attr">"to"</span>: [
+        {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+          <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+          <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+          <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+        }
+      ],
+      <span class="hljs-attr">"cc"</span>: [
+        {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+          <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+          <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+          <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+        }
+      ],
+      <span class="hljs-attr">"bcc"</span>: [
+        {
+          <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+          <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+          <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+          <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+        }
+      ]
+    },
     <span class="hljs-attr">"body"</span>: [
       {
         <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -15593,7 +15821,10 @@ System.out.println(response.toString());
       }
     ],
     <span class="hljs-attr">"linked_resources"</span>: [
-      {}
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
     ],
     <span class="hljs-attr">"owner_id"</span>: <span class="hljs-string">"456"</span>,
     <span class="hljs-attr">"creator_id"</span>: <span class="hljs-string">"456"</span>,
@@ -15742,32 +15973,8 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
-<td>» owner_id</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» creator_id</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» updated</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» created</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
 <td>» addresses</td>
-<td>[Unknown]</td>
+<td>object</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -15892,6 +16099,30 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
+<td>» owner_id</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» creator_id</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» updated</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» created</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
 <td>» body</td>
 <td>[<a href="#schemaemailbody">EmailBody</a>]</td>
 <td>false</td>
@@ -15941,13 +16172,13 @@ System.out.println(response.toString());
 </tr>
 <tr>
 <td>» linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -16010,9 +16241,38 @@ $.ajax({
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -16033,7 +16293,10 @@ $.ajax({
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -16113,9 +16376,38 @@ System.out.println(response.toString());
   <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
   <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
   <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"addresses"</span>: [
-    {}
-  ],
+  <span class="hljs-attr">"addresses"</span>: {
+    <span class="hljs-attr">"from"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+      <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+      <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+    },
+    <span class="hljs-attr">"to"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"cc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"bcc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ]
+  },
   <span class="hljs-attr">"body"</span>: [
     {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -16136,7 +16428,10 @@ System.out.println(response.toString());
     }
   ],
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -16279,37 +16574,9 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
-<td>» owner_id</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» creator_id</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» updated</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» created</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
 <td>» addresses</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>object</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -16454,6 +16721,34 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
+<td>» owner_id</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» creator_id</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» updated</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» created</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
 <td>» body</td>
 <td>body</td>
 <td>[<a href="#schemaemailbody">EmailBody</a>]</td>
@@ -16512,14 +16807,14 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
 <td>body</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -16735,9 +17030,38 @@ System.out.println(response.toString());
   <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
   <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
   <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"addresses"</span>: [
-    {}
-  ],
+  <span class="hljs-attr">"addresses"</span>: {
+    <span class="hljs-attr">"from"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+      <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+      <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+    },
+    <span class="hljs-attr">"to"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"cc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"bcc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ]
+  },
   <span class="hljs-attr">"body"</span>: [
     {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -16758,7 +17082,10 @@ System.out.println(response.toString());
     }
   ],
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -16847,9 +17174,38 @@ $.ajax({
   "open_count": 10,
   "reply_count": 2,
   "has_attachments": true,
-  "addresses": [
-    {}
-  ],
+  "addresses": {
+    "from": {
+      "name": "Elon Musk",
+      "email": "elon@spacex.com",
+      "contact_id": "4559",
+      "user_id": ""
+    },
+    "to": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "cc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ],
+    "bcc": [
+      {
+        "name": "Elon Musk",
+        "email": "elon@spacex.com",
+        "contact_id": "4559",
+        "user_id": ""
+      }
+    ]
+  },
   "body": [
     {
       "type": "text/plain",
@@ -16870,7 +17226,10 @@ $.ajax({
     }
   ],
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -16953,9 +17312,38 @@ System.out.println(response.toString());
   <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
   <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
   <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"addresses"</span>: [
-    {}
-  ],
+  <span class="hljs-attr">"addresses"</span>: {
+    <span class="hljs-attr">"from"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+      <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+      <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+    },
+    <span class="hljs-attr">"to"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"cc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"bcc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ]
+  },
   <span class="hljs-attr">"body"</span>: [
     {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -16976,7 +17364,10 @@ System.out.println(response.toString());
     }
   ],
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -17126,37 +17517,9 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
-<td>» owner_id</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» creator_id</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» updated</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>» created</td>
-<td>body</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
 <td>» addresses</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>object</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -17301,6 +17664,34 @@ System.out.println(response.toString());
 <td>No description</td>
 </tr>
 <tr>
+<td>» owner_id</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» creator_id</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» updated</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» created</td>
+<td>body</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
 <td>» body</td>
 <td>body</td>
 <td>[<a href="#schemaemailbody">EmailBody</a>]</td>
@@ -17359,14 +17750,14 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>»» id</td>
 <td>body</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -17442,9 +17833,38 @@ System.out.println(response.toString());
   <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
   <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
   <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"addresses"</span>: [
-    {}
-  ],
+  <span class="hljs-attr">"addresses"</span>: {
+    <span class="hljs-attr">"from"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+      <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+      <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+    },
+    <span class="hljs-attr">"to"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"cc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"bcc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ]
+  },
   <span class="hljs-attr">"body"</span>: [
     {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -17465,7 +17885,10 @@ System.out.println(response.toString());
     }
   ],
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -17767,7 +18190,10 @@ System.out.println(response.toString());
     <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
     <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
     <span class="hljs-attr">"linked_resources"</span>: [
-      {}
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+      }
     ],
     <span class="hljs-attr">"owner_id"</span>: <span class="hljs-string">"456"</span>,
     <span class="hljs-attr">"creator_id"</span>: <span class="hljs-string">"456"</span>,
@@ -17875,7 +18301,7 @@ System.out.println(response.toString());
 </tr>
 <tr>
 <td>» linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -17934,7 +18360,10 @@ $.ajax({
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -18004,7 +18433,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -18100,7 +18532,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -18285,7 +18717,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -18364,7 +18799,10 @@ $.ajax({
   "url": "https://api.apideck.com/crm/files/13/download",
   "description": "Signed contract of new deal!",
   "linked_resources": [
-    {}
+    {
+      "id": 2,
+      "type": "Opportunity"
+    }
   ]
 }'</span>;
 <span class="hljs-keyword">const</span> headers = {
@@ -18437,7 +18875,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -18540,7 +18981,7 @@ System.out.println(response.toString());
 <tr>
 <td>» linked_resources</td>
 <td>body</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -18585,7 +19026,10 @@ System.out.println(response.toString());
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 }
 </code></pre>
@@ -21779,7 +22223,13 @@ oauth2 ( Scopes: write:webhooks )
   ],
   <span class="hljs-attr">"custom_fields"</span>: {
     <span class="hljs-attr">"research"</span>: <span class="hljs-string">"High energy person. Founding CEO Salesforce."</span>
-  }
+  },
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 } 
 </code></pre>
 <h3 id="properties">Properties</h3>
@@ -21883,6 +22333,39 @@ oauth2 ( Scopes: write:webhooks )
 <td>false</td>
 <td>No description</td>
 </tr>
+<tr>
+<td>linked_resources</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» id</td>
+<td>integer</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>» type</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enumerated-values">Enumerated Values</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>» type</td>
+<td>Lead/Opportunity/Person/Company</td>
+</tr>
 </tbody>
 </table>
 <h2 id="call">Call</h2>
@@ -21901,7 +22384,10 @@ oauth2 ( Scopes: write:webhooks )
   <span class="hljs-attr">"direction"</span>: <span class="hljs-string">"incoming"</span>,
   <span class="hljs-attr">"missed"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 } 
 </code></pre>
@@ -22020,13 +22506,13 @@ oauth2 ( Scopes: write:webhooks )
 </tr>
 <tr>
 <td>linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>» id</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -22073,7 +22559,10 @@ oauth2 ( Scopes: write:webhooks )
   <span class="hljs-attr">"all_day"</span>: <span class="hljs-literal">false</span>,
   <span class="hljs-attr">"reminder_date"</span>: <span class="hljs-string">"2017-08-10T16:00:00.001Z"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 } 
 </code></pre>
@@ -22186,7 +22675,7 @@ oauth2 ( Scopes: write:webhooks )
 </tr>
 <tr>
 <td>linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -22246,9 +22735,38 @@ oauth2 ( Scopes: write:webhooks )
   <span class="hljs-attr">"open_count"</span>: <span class="hljs-number">10</span>,
   <span class="hljs-attr">"reply_count"</span>: <span class="hljs-number">2</span>,
   <span class="hljs-attr">"has_attachments"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"addresses"</span>: [
-    {}
-  ],
+  <span class="hljs-attr">"addresses"</span>: {
+    <span class="hljs-attr">"from"</span>: {
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+      <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+      <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+      <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+    },
+    <span class="hljs-attr">"to"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"cc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ],
+    <span class="hljs-attr">"bcc"</span>: [
+      {
+        <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Elon Musk"</span>,
+        <span class="hljs-attr">"email"</span>: <span class="hljs-string">"elon@spacex.com"</span>,
+        <span class="hljs-attr">"contact_id"</span>: <span class="hljs-string">"4559"</span>,
+        <span class="hljs-attr">"user_id"</span>: <span class="hljs-string">""</span>
+      }
+    ]
+  },
   <span class="hljs-attr">"body"</span>: [
     {
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"text/plain"</span>,
@@ -22269,7 +22787,10 @@ oauth2 ( Scopes: write:webhooks )
     }
   ],
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 } 
 </code></pre>
@@ -22387,32 +22908,8 @@ oauth2 ( Scopes: write:webhooks )
 <td>No description</td>
 </tr>
 <tr>
-<td>owner_id</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>creator_id</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>updated</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
-<td>created</td>
-<td>string</td>
-<td>false</td>
-<td>No description</td>
-</tr>
-<tr>
 <td>addresses</td>
-<td>[Unknown]</td>
+<td>object</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -22537,6 +23034,30 @@ oauth2 ( Scopes: write:webhooks )
 <td>No description</td>
 </tr>
 <tr>
+<td>owner_id</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>creator_id</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>created</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
 <td>body</td>
 <td>[<a href="#schemaemailbody">EmailBody</a>]</td>
 <td>false</td>
@@ -22586,13 +23107,13 @@ oauth2 ( Scopes: write:webhooks )
 </tr>
 <tr>
 <td>linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
 <tr>
 <td>» id</td>
-<td>string</td>
+<td>integer</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -22904,11 +23425,14 @@ oauth2 ( Scopes: write:webhooks )
 <h2 id="note">Note</h2>
 <p><a name="schemanote"></a></p>
 <pre class="highlight tab tab-json"><code>{
-  <span class="hljs-attr">"linked_resources"</span>: [
-    {}
-  ],
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Note to myself"</span>,
-  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>
+  <span class="hljs-attr">"description"</span>: <span class="hljs-string">"New entrant in market. Look into to this company + references."</span>,
+  <span class="hljs-attr">"linked_resources"</span>: [
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
+  ]
 } 
 </code></pre>
 <h3 id="properties">Properties</h3>
@@ -22960,7 +23484,7 @@ oauth2 ( Scopes: write:webhooks )
 </tr>
 <tr>
 <td>linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -23002,7 +23526,10 @@ oauth2 ( Scopes: write:webhooks )
   <span class="hljs-attr">"url"</span>: <span class="hljs-string">"https://api.apideck.com/crm/files/13/download"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Signed contract of new deal!"</span>,
   <span class="hljs-attr">"linked_resources"</span>: [
-    {}
+    {
+      <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+    }
   ]
 } 
 </code></pre>
@@ -23079,7 +23606,7 @@ oauth2 ( Scopes: write:webhooks )
 </tr>
 <tr>
 <td>linked_resources</td>
-<td>[Unknown]</td>
+<td>[<a href="#schemalinkedresource">LinkedResource</a>]</td>
 <td>false</td>
 <td>No description</td>
 </tr>
@@ -23108,6 +23635,53 @@ oauth2 ( Scopes: write:webhooks )
 <tbody>
 <tr>
 <td>» type</td>
+<td>Lead/Opportunity/Person/Company</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkedresource">LinkedResource</h2>
+<p><a name="schemalinkedresource"></a></p>
+<pre class="highlight tab tab-json"><code>{
+  <span class="hljs-attr">"id"</span>: <span class="hljs-number">2</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-string">"Opportunity"</span>
+} 
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>integer</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+<tr>
+<td>type</td>
+<td>string</td>
+<td>false</td>
+<td>No description</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enumerated-values">Enumerated Values</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
 <td>Lead/Opportunity/Person/Company</td>
 </tr>
 </tbody>
