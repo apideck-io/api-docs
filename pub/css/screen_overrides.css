@@ -61,7 +61,8 @@
 
 .toc-wrapper > img {
   display: block;
-  max-width: 100%;
+  width: 163px;
+  height: 33px;
   padding: 0 0 10px 30px;
 }
 
