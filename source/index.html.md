@@ -14283,6 +14283,7 @@ currency|string|false|No description
 tax_percentage|number|false|No description
 
 
-
+# Other APIs
+<a href="/file-storage.html">File Storage</a>
 
 
